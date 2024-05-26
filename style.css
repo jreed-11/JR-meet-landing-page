@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+
+  max-width: 144rem;
+}
+
+.logo {
+  padding-bottom: 6.1rem;
+}
+
+.hero_section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13.7rem;
+  max-height: 35.8rem;
+  border: 2px solid teal;
+}
+
+.flex__hero__text__container {
+  align-self: center;
+
+  padding: 0 8.8rem;
+  text-align: center;
+}
+
+.hero__img__right {
+  align-self: flex-end;
+}
+
+.section-number {
+  margin-bottom: 2.8rem;
+}
+
+.central-img-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.central__img {
+  border-radius: 7px;
+  max-width: 25.5rem;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 9.4rem 0 18.4rem 0rem;
+}
+
+.footer__flex__container {
+  display: flex;
+}
