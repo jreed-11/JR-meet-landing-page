@@ -1,3 +1,20 @@
+:root {
+  /* primay colours */
+
+  --primay-text: #87879d;
+  --secondary-heading: #28283d;
+  --btn-text: #fff;
+
+  /* Button Colours */
+
+  --primary-btn: #4d96a9;
+  --secondary-btn: #855fb1;
+
+  /* Btn Hover States */
+  --primary-hover: #71c0d4;
+  --secondary-hover: #b18bdd;
+}
+
 *,
 *::before,
 *::after {
@@ -10,10 +27,25 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  color: var(--primay-text);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+
+h1 {
+  color: var(--secondary-heading);
+  font-size: 6.4rem;
+  font-weight: 900;
+  line-height: 6.4rem;
+}
+
 .main-container {
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   margin-top: 8rem;
 
   max-width: 144rem;
@@ -26,15 +58,15 @@ html {
 .hero_section {
   display: flex;
   flex-direction: row;
+  gap: 7rem;
   margin-bottom: 13.7rem;
   max-height: 35.8rem;
+  max-width: 150.4rem;
   border: 2px solid teal;
 }
 
 .flex__hero__text__container {
   align-self: center;
-
-  padding: 0 8.8rem;
   text-align: center;
 }
 
@@ -61,6 +93,8 @@ html {
   align-items: center;
   flex-direction: column;
   margin: 9.4rem 0 18.4rem 0rem;
+  max-width: 54rem;
+  text-align: center;
 }
 
 .footer__flex__container {
