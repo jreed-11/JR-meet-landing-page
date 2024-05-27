@@ -3,6 +3,7 @@
 
   --primay-text: #87879d;
   --secondary-heading: #28283d;
+  --accent-text: #87879d;
   --btn-text: #fff;
 
   /* Button Colours */
@@ -142,12 +143,53 @@ h1 {
   margin: 3.2rem 0 0 0;
 }
 
+.number-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.section-number {
+  background-color: #fff;
+  color: var(--accent-text);
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.section-number-one {
+  margin-bottom: 3.5rem;
+}
+
+.section-number-two {
+  border-radius: 50%;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+}
+
 .footer-section {
-  /* background: rgba(0, 158, 136, 0.8); */
+  background-color: #5798a9;
+  background-blend-mode: multiply;
+  /* opacity: 80%; */
   background-image: url(/desktop/image-footer.jpg);
-  padding: 11.6rem 16.5rem 10.4rem 16.5rem;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
 }
 
 .footer__flex__container {
   display: flex;
+  padding: 11.6rem 16.5rem 10.4rem 16.5rem;
+}
+
+.footer__heading {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+
+.footer__para {
+  color: #fff;
 }
