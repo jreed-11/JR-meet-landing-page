@@ -4,6 +4,7 @@
   --primay-text: #87879d;
   --secondary-heading: #28283d;
   --accent-text: #87879d;
+  --secondary-accent-text: #c4a1ec;
   --btn-text: #fff;
 
   /* Button Colours */
@@ -85,6 +86,7 @@ h1 {
   margin-bottom: 13.7rem;
   max-height: 35.8rem;
   max-width: 150.4rem;
+
   /* border: 2px solid teal; */
 }
 
@@ -96,9 +98,11 @@ h1 {
 .hero__para {
   margin: 3.4rem 0 3.2rem 0;
 }
-
+.hero_img__left {
+  align-self: flex-start;
+}
 .hero__img__right {
-  align-self: flex-end;
+  padding-top: 5rem;
 }
 
 .section-number {
@@ -170,11 +174,11 @@ h1 {
 }
 
 .footer-section {
-  background-color: #5798a9;
+  background-color: #1c758d;
   background-blend-mode: multiply;
-  /* opacity: 80%; */
   background-image: url(/desktop/image-footer.jpg);
   background-size: cover;
+  filter: contrast(90%);
   position: relative;
   z-index: 10;
 }
@@ -187,9 +191,25 @@ h1 {
 .footer__heading {
   color: #fff;
   font-size: 4rem;
+  padding-right: 12.5rem;
   line-height: 4.4rem;
 }
 
 .footer__para {
+  align-self: center;
   color: #fff;
+  margin-right: 9.2rem;
+  max-width: 34rem;
+  text-align: left;
+}
+
+.footer__btn {
+  align-self: center;
+  background-color: var(--secondary-btn);
+}
+
+.download__btn__accent--secondary {
+  color: var(--secondary-accent-text);
+  display: inline;
+  font-weight: bold;
 }
