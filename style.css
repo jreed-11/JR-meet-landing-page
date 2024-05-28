@@ -101,9 +101,9 @@ h1 {
 .hero_img__left {
   align-self: flex-start;
 }
-.hero__img__right {
+/* .hero__img__right {
   padding-top: 5rem;
-}
+} */
 
 .section-number {
   margin-bottom: 2.8rem;
@@ -174,13 +174,16 @@ h1 {
 }
 
 .footer-section {
-  background-color: #1c758d;
-  background-blend-mode: multiply;
+  border-image: linear-gradient(
+      hsla(193, 92%, 36%, 0.863),
+      hsla(193, 93%, 35%, 0.61)
+    )
+    fill 1;
+  /* background-color: #1c758d; */
+  /* background-blend-mode: multiply; */
   background-image: url(/desktop/image-footer.jpg);
   background-size: cover;
-  filter: contrast(90%);
-  position: relative;
-  z-index: 10;
+  /* filter: contrast(90%); */
 }
 
 .footer__flex__container {
