@@ -4,7 +4,7 @@
   --primay-text: #87879d;
   --secondary-heading: #28283d;
   --accent-text: #87879d;
-  --secondary-accent-text: #c4a1ec;
+  --secondary-accent-text: #cfadf5;
   --btn-text: #fff;
 
   /* Button Colours */
@@ -184,10 +184,13 @@ h1 {
   background-image: url(/desktop/image-footer.jpg);
   background-size: cover;
   /* filter: contrast(90%); */
+
+  width: 100%;
 }
 
 .footer__flex__container {
   display: flex;
+  flex-wrap: nowrap;
   padding: 11.6rem 16.5rem 10.4rem 16.5rem;
 }
 
@@ -209,10 +212,9 @@ h1 {
 .footer__btn {
   align-self: center;
   background-color: var(--secondary-btn);
+  flex-wrap: nowrap;
 }
 
 .download__btn__accent--secondary {
   color: var(--secondary-accent-text);
-  display: inline;
-  font-weight: bold;
 }
