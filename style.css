@@ -40,6 +40,7 @@ body {
 
 .btn {
   border-radius: 2.9rem;
+  cursor: pointer;
   color: var(--btn-text);
   display: inline;
   font-size: 1.6rem;
@@ -58,6 +59,17 @@ body {
 
 .what__btn {
   background-color: var(--secondary-btn);
+}
+
+/* button Hover States */
+
+.hero__download__btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.what__btn:hover,
+.footer__btn:hover {
+  background-color: var(--secondary-hover);
 }
 
 h1 {
@@ -148,6 +160,7 @@ h1 {
   font-size: 4rem;
   font-weight: 900;
   line-height: 4.4rem;
+  max-width: 44.5rem;
 }
 
 .info__section__para {
@@ -265,6 +278,7 @@ h1 {
   }
 
   .info-section {
+    margin-top: 4.8rem;
     max-width: 57.3rem;
   }
 
@@ -305,12 +319,16 @@ h1 {
 
   .flex__hero__text__container {
     align-content: center;
-    padding-top: 4.6rem;
+    padding-bottom: 0;
   }
 
   .btn {
     display: block;
     max-width: fit-content;
+  }
+
+  .hero_section {
+    margin-bottom: 30rem;
   }
 
   .hero__title {
@@ -319,7 +337,8 @@ h1 {
   }
 
   .central-img-container {
-    align-items: center;
+    justify-content: center;
+    margin-top: 6.4rem;
   }
 
   .central__img {
@@ -328,6 +347,14 @@ h1 {
 
   .btn {
     margin: 0 auto;
+  }
+
+  .info-section {
+    max-width: 30.3rem;
+  }
+
+  .info__section__heading {
+    font-size: 3.2rem;
   }
 
   .hero__download__btn {
