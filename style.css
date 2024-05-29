@@ -1,4 +1,6 @@
 :root {
+  /* COLOURS */
+
   /* primay colours */
 
   --primay-text: #87879d;
@@ -14,6 +16,17 @@
   /* Btn Hover States */
   --primary-hover: #71c0d4;
   --secondary-hover: #b18bdd;
+
+  /* ---------------------- */
+
+  /* Font Sizes */
+  --fs-main: 1.6rem;
+  --fs-body: 1.8rem;
+  --fs-heading-small: 3.2rem;
+  --fs-heading-medium: 4rem;
+  --fs-heading-large: 6.2rem;
+
+  /* ----------------------- */
 }
 
 *,
@@ -31,18 +44,26 @@ html {
 body {
   color: var(--primay-text);
   font-family: "Red Hat Display", sans-serif;
-  font-size: 1.8rem;
+  font-size: var(--fs-body);
   line-height: 2.6rem;
 }
+
+/* UTILLITY CLASSES */
+
+.d-flex {
+  display: flex;
+}
+
+/* ------------------------ */
 
 /* Button Styles */
 
 .btn {
   border-radius: 2.9rem;
-  cursor: pointer;
   color: var(--btn-text);
+  cursor: pointer;
   display: inline;
-  font-size: 1.6rem;
+  font-size: var(--fs-main);
   font-weight: 700;
   padding: 1.6rem 4rem;
   text-decoration: none;
@@ -71,16 +92,17 @@ body {
   background-color: var(--secondary-hover);
 }
 
+/* --------------------- */
+
 h1 {
   color: var(--secondary-heading);
-  font-size: 6.4rem;
+  font-size: var(--fs-heading-large);
   font-weight: 900;
   line-height: 6.4rem;
 }
 
 .main-container {
   align-items: center;
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 8rem;
@@ -92,15 +114,12 @@ h1 {
 }
 
 .hero_section {
-  display: flex;
   flex-direction: row;
   gap: 7rem;
 
   margin-bottom: 13.7rem;
   max-height: 35.8rem;
   max-width: 150.4rem;
-
-  /* border: 2px solid teal; */
 }
 
 .flex__hero__text__container {
@@ -127,7 +146,6 @@ h1 {
 }
 
 .central-img-container {
-  display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 }
@@ -138,7 +156,6 @@ h1 {
 }
 
 .info-section {
-  display: flex;
   align-items: center;
   flex-direction: column;
   margin: 9.4rem 0 18.4rem 0rem;
@@ -148,7 +165,7 @@ h1 {
 
 .info__section__title {
   color: #4d96a9;
-  font-size: 1.6rem;
+  font-size: var(--fs-main);
   font-weight: bold;
   letter-spacing: 0.4rem;
   margin-bottom: 1.6rem;
@@ -156,7 +173,7 @@ h1 {
 
 .info__section__heading {
   color: var(--secondary-heading);
-  font-size: 4rem;
+  font-size: var(--fs-heading-medium);
   font-weight: 900;
   line-height: 4.4rem;
   max-width: 44.5rem;
@@ -167,14 +184,13 @@ h1 {
 }
 
 .number-wrapper {
-  display: flex;
   align-items: center;
 }
 
 .section-number {
   background-color: #fff;
   color: var(--accent-text);
-  font-size: 1.6rem;
+  font-size: var(--fs-main);
   font-weight: bold;
   margin: 0;
 }
@@ -198,24 +214,19 @@ h1 {
       hsla(193, 93%, 35%, 0.61)
     )
     fill 1;
-  /* background-color: #1c758d; */
-  /* background-blend-mode: multiply; */
   background-image: url(/desktop/image-footer.jpg);
   background-size: cover;
-  /* filter: contrast(90%); */
-
   width: 100%;
 }
 
 .footer__flex__container {
-  display: flex;
   flex-wrap: nowrap;
   padding: 11.6rem 16.5rem 10.4rem 16.5rem;
 }
 
 .footer__heading {
   color: #fff;
-  font-size: 4rem;
+  font-size: var(--fs-heading-medium);
   padding-right: 12.5rem;
   line-height: 4.4rem;
 }
@@ -282,7 +293,7 @@ h1 {
   }
 
   .info__section__para {
-    font-size: 1.6rem;
+    font-size: var(--fs-main);
   }
 
   .footer__flex__container {
@@ -331,7 +342,7 @@ h1 {
   }
 
   .hero__title {
-    font-size: 4rem;
+    font-size: var(--fs-heading-medium);
     line-height: 4.4rem;
   }
 
@@ -353,7 +364,7 @@ h1 {
   }
 
   .info__section__heading {
-    font-size: 3.2rem;
+    font-size: var(--fs-heading-small);
   }
 
   .hero__download__btn {
